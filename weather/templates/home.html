@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+{%block title%}
+Home | Weather App
+{% endblock %}
+
+{%block content%}
+<!-- In order for the form to work and linked, it needs an action to where it will go and a method. In this case, it executes the weather-app.py's post method under the MainHandler class -->
+<form action='/' method='post'>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Choose a City:</label>
+        <input type="text" name='city' class="form-control" id="exampleFormControlInput1" placeholder="City, State">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{%endblock%}

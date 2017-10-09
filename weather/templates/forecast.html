@@ -1,0 +1,16 @@
+{%extends 'base.html'%} 
+
+{%block title%} Forecast | Weather App {% endblock %} 
+
+{%block content%}
+<div class='container-fluid'>
+    <div class='stats col'>
+        <h2>{{city_name}}</h2>
+        <p>Temperature: {{temperature}} °F</p>
+        <p>Wind Speed: {{wind}}</p>
+    </div>
+    <div class='sun'>
+        <img src='https://icons.wxug.com/i/c/v4/mostlycloudy.svg'>
+    </div>
+</div>
+{% endblock %}
